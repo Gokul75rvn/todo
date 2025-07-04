@@ -53,3 +53,33 @@ todo/
 
 
 
+---
+
+## 🚀 How to Run Locally
+
+### 🔧 1. Clone the repo
+
+```bash
+git clone https://github.com/Gokul75rvn/todo.git
+cd todo
+
+cd backend
+npm install
+🔐 Google OAuth Setup
+To use Google login:
+
+Register app at Google Cloud Console
+
+Set Authorized Origin: https://todo-fsil-gokul75rvns-projects.vercel.app
+
+Add to .env:
+REACT_APP_GOOGLE_CLIENT_ID=<your-client-id>
+
+🧠 Assumptions & Notes
+Desktop-first UI (mobile layout skipped per requirement)
+
+Shared task feature uses email only (no full account linking)
+
+Simple tag UI prepared but filtering logic is minimal
+
+Real-time sync uses refetch (no WebSocket)
